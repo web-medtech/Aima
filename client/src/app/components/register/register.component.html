@@ -1,0 +1,60 @@
+<div class="modal-dialog" id="register-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" (click)="close()">
+        &times;
+      </button>
+      <h4 class="modal-title">{{title || 'Créer un compte'}}</h4>
+    </div>
+    <form (submit)="onRegisterSubmit()">
+      <div class="modal-body">
+        <div class="form-group">
+          <span class="required">
+            <input
+              type="text" class="form-control"
+              [(ngModel)]="firstName" name="firstName"
+              placeholder="Prénom">
+          </span>
+        </div>
+        <div class="form-group">
+          <span class="required">
+            <input
+              type="text" class="form-control"
+              [(ngModel)]="lastName" name="lastName"
+              placeholder="Nom">
+          </span>
+        </div>
+        <div class="form-group">
+          <span class="required">
+            <input
+              type="email" class="form-control"
+              [(ngModel)]="email" name="email"
+              placeholder="Adresse électronique">
+          </span>
+        </div>
+        <div class="form-group">
+          <span class="required">
+            <input
+              type="password" class="form-control"
+              [(ngModel)]="password" name="password"
+              placeholder="Mot de passe">
+          </span>
+        </div>
+        <div class="form-group">
+          <input
+            type="text" class="form-control"
+            [(ngModel)]="phoneNumber" name="phoneNumber"
+            placeholder="Numéro de téléphone">
+        </div>
+        <h6 class="note">(*) champs obligatoire.</h6>
+      </div>
+      <div class="modal-footer">
+        <button
+          id="register-button" type="submit"
+          class="btn btn-primary">
+          S'inscrire
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

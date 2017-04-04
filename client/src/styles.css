@@ -1,0 +1,225 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #FAFAFA;
+}
+
+button {
+  outline: none !important;
+}
+
+/* fix webkit autofill color */
+
+@-webkit-keyframes autofill {
+  to { background: white; }
+}
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+
+/* Bootstrap css Hooks */
+
+a {
+  color: #CC1100;
+}
+
+a:hover,
+a:focus,
+a:active {
+  cursor: pointer;
+  color: #B20E00;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 5px 15px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.04) !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+  color: white;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #CC1100;
+  border-color: #CC1100;
+}
+
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+  background-color: #B20E00;
+  border-color: #B20E00;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  background-color: white;
+  border-color: #CCC;
+  box-shadow: none;
+}
+
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default.focus:active,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover {
+  background-color: #F0F0F0;
+  border-color: #CCC;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.04);
+}
+
+.modal-content {
+  background: transparent;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 15px 20px;
+}
+
+.modal-header {
+  background: #FAFAFA;
+  border-color: #E7E7E7;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.modal-body,
+.modal-footer {
+  background: #FFFFFF;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.modal-footer {
+  border-top: 1px solid #E7E7E7;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.form-group > label {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  padding-right: 24px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.075);
+  box-shadow: inset 0 0 3px rgba(0,0,0,.075);
+}
+
+.form-control:focus {
+  border-color: #AAA;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.085);
+  box-shadow: inset 0 0 5px rgba(0,0,0,.085);
+}
+
+.required {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.required:after {
+  content: '*';
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  bottom: 0;
+  color: rgba(0, 0, 0, .2);
+  font-size: 20px;
+}
+
+.note {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 6px;
+}
+
+#forgot-psw {
+  color: rgba(0, 0, 0, 0.67);
+  margin-left: 12px;
+}
+
+#register-modal,
+#login-modal {
+  width: 340px;
+}
+
+#register-modal .modal-body,
+#login-modal .modal-body {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#register-button,
+#login-button {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,30 @@
+<div class="modal-dialog" id="login-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" (click)="close()">
+        &times;
+      </button>
+      <h4 class="modal-title">{{title || 'Se connecter'}}</h4>
+    </div>
+    <form (submit)="onLoginSubmit()">
+      <div class="modal-body">
+        <div class="form-group">
+          <input
+            type="email" class="form-control"
+            [(ngModel)]="email" name="email"
+            placeholder="Adresse électronique">
+        </div>
+        <div class="form-group">
+          <input
+            type="password" class="form-control"
+            [(ngModel)]="password" name="password"
+            placeholder="Mot de passe">
+        </div>
+        <h6 id="forgot-psw">Vous avez oublié votre <a>mot de passe</a> ?</h6>
+      </div>
+      <div class="modal-footer">
+        <button id="login-button" type="submit" class="btn btn-primary">Connexion</button>
+      </div>
+    </form>
+  </div>
+</div>

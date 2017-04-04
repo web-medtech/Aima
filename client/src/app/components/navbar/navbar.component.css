@@ -1,0 +1,54 @@
+.navbar-aima {
+  background: #FFF;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.04);
+}
+
+.navbar-aima .navbar-nav > .active > a,
+.navbar-aima .navbar-nav > .active > a:focus,
+.navbar-aima .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #444;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.navbar-default .navbar-nav > li > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: transparent;
+}
+
+.navbar-aima .navbar-nav > .active > a::after,
+.navbar-aima .navbar-nav > .active > a:focus::after,
+.navbar-aima .navbar-nav > .active > a:hover::after {
+  background: #CC1100;
+}
+
+.navbar-aima .navbar-nav > .btn-aima {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.navbar-aima .navbar-nav > #login {
+  margin-left: 15px;
+}
+
+.navbar-aima .navbar-nav > #sign-up {
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
